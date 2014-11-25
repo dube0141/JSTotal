@@ -1,0 +1,86 @@
+/*BKC COLORS*/
+$dark-blue: #34495e;
+$blue: #3498db;
+$purple: #9b59b6;
+$orange: #e67e22;
+$red: #e74c3c;
+$w: #fff;
+$snow: #ecf0f1;
+$thin: rgba(239, 239, 239, 0.25);
+
+/*FONTS*/
+$osf: 'Open Sans', Helvetica, Arial, sans-serif;
+$nmf: 'Nova Mono', Helvetica, Arial, serif;
+
+/*FONT SIZES*/
+$xlarge: 1.1rem;
+$large: 1rem;
+$medium: 0.9rem;
+$normal: 0.8rem;
+$small: 0.7rem;
+
+/*FONT WEIGHT*/
+$fw-normal: 400;
+$fw-bold: bold;
+
+/*WIDTHS*/
+$full: 100%;
+$cont-wth: 95%;
+$sml: 8%;
+$trdp: 30%;
+$inh: inherit;
+
+/*HEIGHTS*/
+$foot-hgt: 45px;
+
+/*MARGIN*/
+$pad: 0.5%;
+$fivep: 5%;
+$auto: 0 auto;
+
+/*POSITIONS*/
+$fix-pos: fixed;
+$abs-pos: absolute;
+$rel-pos: relative;
+
+/*FLOATS*/
+$l: left;
+$c: center;
+
+/*SETTINGS*/
+$none: none;
+
+/*BORDER RADIUS*/
+$btr: 3px;
+
+/*DURATIONS*/
+$average: 0.4s;
+$fast: 0.3s;
+$faster: 0.2s;
+$lightspeed: 0.1s;
+
+/*OPACITY*/
+$op-light: 0.8;
+
+/*PIXEL VALUES*/
+$zero: 0px;
+$two: 2px;
+$five: 5px;
+$six: 6px;
+$ten: 10px;
+$ftn: 15px;
+$thir: 30px;
+$frty: 40px;
+$fort: 45px;
+$fifty-five: 55px;
+$sixt: 60px;
+$hgtt: 80px;
+/**/
+$hundred: 100px;
+$nh: -100px;
+$headH: 180px;
+$img-h: 200px;
+$col-three-h-media: 250px;
+$col-three-h: 340px;
+$col-four-h: 260px;
+$max: 1020px;

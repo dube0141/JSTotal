@@ -1,0 +1,213 @@
+@mixin col3( $num_of_cols, $spacing, $width ){
+    width: ( $width - ( $spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
+    border-radius: $btr;
+    background-color: $blue;
+    float: $l;
+    height: $col-three-h;
+    margin: $spacing;
+    margin-bottom: $ten;
+    border-bottom: $ten solid $thin;
+    
+    &.col-3:nth-of-type(2){
+        background-color: $purple;
+    }
+    &.col-3:nth-of-type(3){
+        background-color: $orange;
+    }
+    &.col-3 p{
+        text-align: $c;
+        padding-right: $ten;
+        padding-left: $ten;
+    }
+    &.col-3 h3{
+        text-align: $c;
+        padding-right: $ten;
+        padding-left: $ten;
+    }
+}
+@mixin col4( $num_of_cols, $spacing, $width ){
+    width: ( $width - ( $spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
+    border-radius: $btr;
+    position: $rel-pos;
+    background-color: $blue;
+    float: $l;
+    height: $col-four-h;
+    margin: $spacing;
+    margin-bottom: $fifty-five;
+    border-bottom: $five solid $thin;
+    
+    &.col-4:nth-of-type(2){
+        background-color: $purple;
+    }
+    &.col-4:nth-of-type(3){
+        background-color: $purple;
+    }
+    &.col-4:nth-of-type(4){
+        background-color: $orange;
+    }
+    &.col-4 h4{
+        text-align: $c;
+        padding-top: $sml;
+        margin: $six;
+    }
+    &.col-4 p{
+        padding-right: $ten;
+        padding-left: $ten;
+        text-align: $c;
+        margin: $six;
+    }
+}
+@mixin iconic {
+    opacity: $op-light;
+    transition-duration: $fast;
+    @include paddingTB;
+    background-color: $thin;
+    margin-top: $ftn;
+    width: $full;
+    height: $fort;
+}
+@mixin fx-one{
+.focal-row .box1 {
+    opacity: 0;
+    transition: all $average ease-in-out;
+}
+&.focal-row .box1 h3 {
+    transform: translateY($nh);
+    opacity: 0;
+    transition: all $faster ease-in-out;
+}
+&.focal-row .box1 p { 
+    transform: translateY($hundred);
+    opacity: 0;
+    transition: all $faster linear;
+}
+
+/* */
+&.focal-row .box1:hover{ 
+    opacity: 1;
+}
+&.focal-row .box1:hover h3,
+&.focal-row .box1:hover p{
+    opacity: 1;
+    transform: translateY($zero);
+}
+&.focal-row .box1:hover p {
+    transition-delay: $lightspeed;
+}
+&.focal-row .box1:hover .iconic {
+    opacity: 1;
+    border-top: $five solid $thin;
+    border-bottom: $five solid $thin;
+    transition-duration: $fast;
+    height: $trdp;
+}
+}
+@mixin fx-two{
+.box { 
+    transition: all $fast linear;
+}   
+&.box h4{
+    transform: scale(0.9);
+    transition: all $fast linear;
+    opacity: 0.1;
+}
+&.box p {
+    opacity: 0.1;
+    transform: scale(0.9);
+    transition: all $fast linear;
+}
+&.box:hover img { 
+    -webkit-transform: scale($ten);  
+    transform: scale($ten);
+    opacity: 0;
+}
+
+&.box:hover{ 
+    opacity: 1;
+}                                                                            
+&.box:hover h4,
+&.box:hover p{ 
+    transform: scale(1);
+    opacity: 1;
+}
+}
+.iconic-property-fill{
+    fill: $dark-blue;
+}
+@mixin button ($buttonW, $buttonH){
+    border-radius: $two;
+    transition-duration: $fast;
+    position: $abs-pos;
+    margin-bottom: $ten;
+    margin-left: $fivep;
+    font-size: $normal;
+    width: $buttonW;
+    height: $buttonH;
+    outline: $none;
+    border-style: $none;
+    background-color: $red;
+    color: $w;
+    bottom: $zero;
+    cursor: pointer;
+    
+    &.btn:hover{
+        transition-duration: $fast;
+        background-color: $w;
+        color: $red;
+    }
+}
+@mixin media-one {
+    .col-3{
+        @include col3(1, 0.5%, 98%);
+        height: $col-three-h-media;
+    }
+    .col-3 h3{
+        font-size: $large;
+    }
+    .col-3 p{
+        text-align: $c;
+        font-size: $normal;
+    }
+    .col-4{
+        @include col4(2, 0.5%, 98%);
+        margin-bottom: $five;
+    }
+    .col-4:nth-of-type(3),.col-4:nth-of-type(4){
+        margin-bottom: $fifty-five;
+    }
+    .col-4 h4{
+        height: $fort;   
+    }
+    .col-4 p{
+        text-align: $c;
+        font-size: $medium;
+    }
+}
+@mixin media-two {
+    .col-4 h4{
+        height: $frty;
+    }
+    .iconic{
+        height: $hgtt;
+    }
+    .btn{
+        font-size: $normal;
+    }
+}
+
+@mixin marginTB {
+    margin-top: $ten;
+    margin-bottom: $ten;
+}
+@mixin marginRL {
+    margin-right: $ten;
+    margin-left: $ten;
+}
+@mixin topBorders{
+    border-top-right-radius: $btr;
+    border-top-left-radius: $btr;   
+}
+@mixin paddingTB{
+    padding-top: $five;
+    padding-bottom: $five;   
+}

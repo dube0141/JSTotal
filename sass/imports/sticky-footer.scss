@@ -1,0 +1,16 @@
+.foot{
+    @include topBorders;
+    width: 100%;
+    height: $fort;
+    background-color: $dark-blue;
+    clear: both;
+    opacity: $op-light;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.foot p{
+    font-weight: $fw-bold;
+    margin-left: $ten;
+    display: inline-block;
+}

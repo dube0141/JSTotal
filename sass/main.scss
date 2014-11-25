@@ -1,0 +1,75 @@
+/*MAIN SASS File*/
+@import "imports/normalize";
+@import "imports/variables";
+@import "imports/mixins";
+@import "imports/sticky-footer";
+
+/*DEFAULTS*/
+h1,h2,h3,h4,h5,h6,p{
+    color: $w;
+}
+h2{
+    font-family: $osf;
+    font-size: $large;
+}
+h3,h4,h5,h6{
+    font-family: $nmf;
+}
+p{
+    font-family: $osf;
+    font-size: $normal;
+}
+/*CONTENT*/
+html{
+    background-color: $snow;
+    position: relative;
+    min-height: 100%;
+}
+body{
+    margin: 0 0 $fort; /* bottom = footer height */
+}
+.wrapper{
+    max-width: $max;
+    margin: $auto;
+}
+.masthead{
+    @include topBorders;
+    text-align: $c;
+    height: $headH;
+    background-color: $dark-blue;
+    border-bottom: $five solid $thin;
+    @include marginTB;
+}
+.masthead h2{
+    @include marginRL;
+    opacity: $op-light;
+}
+.masthead img{
+    width: $col-four-h;
+    margin-top: $ftn;
+}
+.iconic{
+    @include iconic;
+}
+.col-3{
+    @include col3(3, 0.5%, 98%);
+}
+.col-4{
+    @include col4(4, 0.5%, 97%);
+    @include fx-two;
+}
+.btn{
+    @include button(90%, 40px);
+}
+.focal-row{
+    @include fx-one;
+}
+
+/*@MEDIA'S*/
+@media all and (min-width: 100px) and (max-width: 700px){
+    @include media-one;
+
+}
+@media all and (min-width: 701px){
+    @include media-two;
+}
